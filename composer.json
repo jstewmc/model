@@ -1,8 +1,8 @@
 {
 	"name": "jstewmc/model",
-	"description": "A simple active resource model",
+	"description": "A simple model class",
 	"license": "MIT",
-	"keywords": ["php", "model", "active", "resource"],
+	"keywords": ["php", "model"],
 	"authors": [
 		{
 			"name": "Jack Clayton",
