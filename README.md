@@ -1,5 +1,5 @@
 # Model
-A simple model.
+A simple magic model.
 
 ```php
 use Jstewmc\Model;
@@ -24,16 +24,11 @@ echo $model->foo;    // returns null
 isset($model->foo);  // returns false
 ```
 
-A simple magic model utilizing the `__get()`, `__set()`, `__isset()`, and `__unset()` magic methods.
-
-
 ## Properties
 
 A magic model has properties. Properties are defined in the static `properties` array. 
 
-If you attempt to get, set, or unset a property that is not defined, an `OutOfBoundsException` will be thrown.
-
-Otherwise, a model's properties can be treated like public properties of the model. 
+You can access a model's properties like public properties thanks to the magic `__get()`, `__set()`, `__isset()`, and `__unset()` methods. If you attempt to get, set, or unset a property that is not defined, an `OutOfBoundsException` will be thrown.
 
 ## Data
 
@@ -41,7 +36,7 @@ You can hydrate a model's properties using the `hydrate()` method (keep in mind,
 
 ```php
 
-// ... continuing the example from above
+// ...continuing the example from above
 
 $data = ['foo' => 'qux', 'baz' => 'bar'];
 
